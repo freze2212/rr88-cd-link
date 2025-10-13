@@ -79,6 +79,16 @@ body {
     max-width: 500px;
 }
 
+/* ===== PC Links Grid ===== */
+.links-grid-pc {
+    display: none;
+}
+
+/* ===== Mobile Links Grid ===== */
+.links-grid-mobile {
+    display: grid;
+}
+
 .link-item {
     display: flex;
     flex-direction: column;
@@ -134,6 +144,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btn-container a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.circle-link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .btn-image {
@@ -195,31 +222,37 @@ body {
     .header {
         padding: 20px var(--spacing-md);
         margin-bottom: 20px;
-        margin-top: 50px;
+        /* margin-top: 50px; */
     }
     
     .title-text {
-        max-height: 100px;
+        max-height: 80px;
     }
     
     .main {
         padding: 0 var(--spacing-md);
-        gap: 60px;
+        gap: 40px;
         justify-content: flex-start;
         align-items: center;
     }
     
-    .links-grid {
+    /* Show PC links, hide mobile links */
+    .links-grid-pc {
+        display: grid;
         grid-template-columns: repeat(6, 1fr);
-        max-width: 1600px;
-        gap: 35px;
+        max-width: 1200px;
+        gap: 20px;
         align-items: start;
-        margin-bottom: 30px;
-        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    .links-grid-mobile {
+        display: none;
     }
 
     .link-item {
-        gap: 30px;
+        gap: 20px;
     }
 
     .link-item:nth-child(4),
@@ -229,25 +262,25 @@ body {
     }
     
     .circle-container {
-        width: 200px;
-        height: 200px;
+        width: 130px;
+        height: 130px;
     }
     
     .circle-text {
-        font-size: 2.5rem;
+        font-size: 1.6rem;
     }
 
     .btn-image {
-        max-width: 250px;
+        max-width: 160px;
     }
     
     .btn-text {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     
     .logo-section {
-        height: 100px;
-        margin-top: 20px;
+        height: 80px;
+        margin-top: 15px;
     }
 }
 
