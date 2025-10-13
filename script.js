@@ -16,9 +16,16 @@ document.addEventListener("DOMContentLoaded", () => {
     
     function updateCircleTexts() {
         const numbers = generateRandomNumbers();
-        const circleTexts = document.querySelectorAll('.circle-text');
         
-        circleTexts.forEach((text, index) => {
+        // Update PC links
+        const pcCircleTexts = document.querySelectorAll('.links-grid-pc .circle-text');
+        pcCircleTexts.forEach((text, index) => {
+            text.textContent = numbers[index] + 'ms';
+        });
+        
+        // Update Mobile links with the same numbers
+        const mobileCircleTexts = document.querySelectorAll('.links-grid-mobile .circle-text');
+        mobileCircleTexts.forEach((text, index) => {
             text.textContent = numbers[index] + 'ms';
         });
     }
