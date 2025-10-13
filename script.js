@@ -32,6 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
     updateCircleTexts();
     
-    setInterval(updateCircleTexts, 5000);
+    setInterval(updateCircleTexts, 1000);
 });
   
