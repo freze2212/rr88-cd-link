@@ -185,6 +185,72 @@ body {
     padding: var(--spacing-md) 0;
 }
 
+/* ===== Desktop Responsive ===== */
+@media (min-width: 769px) {
+    body {
+        background-image: url('assets/bg-pc.webp');
+        background-size: cover;
+    }
+    
+    .header {
+        padding: 20px var(--spacing-md);
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    
+    .title-text {
+        max-height: 100px;
+    }
+    
+    .main {
+        padding: 0 var(--spacing-md);
+        gap: 60px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .links-grid {
+        grid-template-columns: repeat(6, 1fr);
+        max-width: 1600px;
+        gap: 35px;
+        align-items: start;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .link-item {
+        gap: 30px;
+    }
+
+    .link-item:nth-child(4),
+    .link-item:nth-child(5),
+    .link-item:nth-child(6) {
+        margin-top: 0;
+    }
+    
+    .circle-container {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .circle-text {
+        font-size: 2.5rem;
+    }
+
+    .btn-image {
+        max-width: 250px;
+    }
+    
+    .btn-text {
+        font-size: 1.2rem;
+    }
+    
+    .logo-section {
+        height: 100px;
+        margin-top: 20px;
+    }
+}
+
 /* ===== Mobile Responsive ===== */
 @media (max-width: 480px) {
     .header {

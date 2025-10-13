@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function generateRandomNumbers() {
         const numbers = [];
         const min = 30;
-        const max = 50;
+        const max = 60;
         
         for (let i = 0; i < 6; i++) {
             const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
